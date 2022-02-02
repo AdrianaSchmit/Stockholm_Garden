@@ -4,16 +4,15 @@ html {
     height: 100%;
 }
 
-body {
-    background: url('/media/cover1.jpg') no-repeat center center fixed;
+#coverimage {
+    background: url('/media/cover3.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 70%;
-    color: #555;
-    font-family: 'Lato';
+    height: 900px;
+  
 }
 
 
-.overlay {
+/* .overlay {
    background-color: white;
    color: black;
    display: block;

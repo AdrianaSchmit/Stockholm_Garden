@@ -1,16 +1,82 @@
-[
-   {
-      "pk":1,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001340155",
-         "name":"BURST OF SPRING BULB GARDEN",
-         "description":"Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
-         "price":53.99,
-         "category":1,
-         "rating":4.6,
-         "image_url":"#",
-         "image":"plant1.jpg"
+[{
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
       }
-   } 
+   },
+   {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp102",
+         "name": "Premium Roses",
+         "description": "Long Stem Assorted Roses'",
+         "price": 24.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant2.webp"
+      }
+   },
+   {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp103",
+         "name": "Red Roses",
+         "description": "What red roses do to one's eyes. Show the special someone in your life how much you care with timelessly beautiful red roses",
+         "price": 34.55,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant3.webp"
+      }
+   }, {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp104",
+         "name": "Rainbow Roses",
+         "description": "A beautiful classic choice, mixed roses are the perfect gift to send to a friend or a loved one",
+         "price": 44.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant4.webp"
+      }
+   }, {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp105",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   }, {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp106",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   }
 ]
