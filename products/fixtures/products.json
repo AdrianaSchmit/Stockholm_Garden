@@ -57,26 +57,219 @@
       "model": "products.product",
       "fields": {
          "sku": "pp105",
-         "name": "BURST OF SPRING BULB GARDEN",
-         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
-         "price": 53.99,
+         "name": "Clear Blue Skies Bouquet",
+         "description": "Our Clear Blue Skies Bouquet is arranged to reflect the beauty of a beautiful day where the sun is shining without a cloud in the sky",
+         "price": 54.99,
          "category": 1,
          "rating": 4.6,
          "image_url": "#",
-         "image": "plant1.jpg"
+         "image": "plant5.webp"
       }
    }, {
       "pk": 6,
       "model": "products.product",
       "fields": {
          "sku": "pp106",
-         "name": "BURST OF SPRING BULB GARDEN",
-         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
-         "price": 53.99,
+         "name": "Serenity and Bliss",
+         "description": "A simple way to express you love without saying anything",
+         "price": 19.99,
          "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant6.webp"
+      }
+   }, {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "MONEY TREE PLANT",
+         "description": "they say money doesn't grow on a tree",
+         "price": 98.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant7.webp"
+      }
+   }, {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Drought tolerant, water only when soil is dry to touch'",
+         "price": 13.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant8.webp"
+      }
+   }, {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "ALOE VERA PLANT",
+         "description": "Aloe plants love bright, direct full sun or indirect light; the kitchen windowsill is a favorite spot",
+         "price": 33.99,
+         "category": 2,
          "rating": 4.6,
          "image_url": "#",
          "image": "plant1.jpg"
       }
-   }
+   }, {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "SWEET HEART BAMBOO",
+         "description": "Best in 3-4 hours of bright filtered sunlight",
+         "price": 10.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant10.webp"
+      }
+   }, {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "HOYA HEART SUCCULENT",
+         "description": "Keep in bright artificial light indoors or near a window without direct sun",
+         "price": 14.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant11.webp"
+      }
+   }, {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "Kokedama",
+         "description": "Thrives in bright, indirect light but will tolerate lower light conditions.",
+         "price": 73.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant12.webp"
+      }
+   },{
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },{
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },{
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },{
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },{
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },{
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp101",
+         "name": "BURST OF SPRING BULB GARDEN",
+         "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
+         "price": 53.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant1.jpg"
+      }
+   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
