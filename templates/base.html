@@ -121,11 +121,12 @@
                     </a>
                     <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                         <a href="{% url 'products' %}" class="dropdown-item">All Plants</a>
-                        <a href="" class="dropdown-item ">Flower Plants</a>
-                        <a href="" class="dropdown-item ">Beginner Plants</a>
-                        <a href="" class="dropdown-item">Office Plants</a>
-                        <a href="" class="dropdown-item ">Succulents</a>
-                        <a href="" class="dropdown-item">Best Selling</a>
+                        <a href="{% url 'products' %}?category=flower_plants" class="dropdown-item ">Flower Plants</a>
+                        <a href="{% url 'products' %}?category=house_plants" class="dropdown-item ">House Plants</a>
+                        <a href="{% url 'products' %}?category=beginner_plants"  class="dropdown-item ">Beginner Plants</a>
+                        <a href="{% url 'products' %}?category=office_plants"  class="dropdown-item">Office Plants</a>
+                        <a href="{% url 'products' %}?category=succulents"  class="dropdown-item ">Succulents</a>
+                        <a href="{% url 'products' %}?category=best_selling"  class="dropdown-item">Best Selling</a>
                     </div>
                 </li>
                 <li class="list-inline-item px-3">
