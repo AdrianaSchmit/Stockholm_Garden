@@ -4,6 +4,16 @@ html {
     height: 100%;
 }
 
+.navbar{
+    margin-bottom: 50px !important;
+}
+
+
+
+#secondnav {
+margin-top: 0;
+}
+
 #coverimage {
     background: url('/media/cover3.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -21,31 +31,50 @@ html {
 	z-index: -1;
 }
 
-
-
-/* .overlay {
-   background-color: white;
-   color: black;
-   display: block;
-   opacity: 0.6;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-top: 100px;
-  font-size: large;
-
-
+img{
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
 }
 
-#banner {
-    background-color: red;
-    width: 300px;
-    height: 800px;
-    float:right;
-    margin-right: 100px;
-    top: 0;
-    display: inline;
-}
 
+
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 200px;
+      }
+  }
+  
+  /* pad the top a bit when navbar is collapsed on mobile */
+  @media (max-width: 991px) {
+      .header-container {
+          padding-top: 116px;
+      }
+  
+      body {
+          height: calc(100vh - 116px);
+      }
+  }
 
 
 
