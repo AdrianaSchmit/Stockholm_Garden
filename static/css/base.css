@@ -4,9 +4,7 @@ html {
     height: 100%;
 }
 
-.navbar{
-    margin-bottom: 50px !important;
-}
+
 
 
 
@@ -38,6 +36,12 @@ img{
 }
 
 
+
+#sidenav
+ {
+margin-left: 100px;
+    }
+    
 
 
 
