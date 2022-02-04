@@ -18,7 +18,7 @@
       "model": "products.product",
       "fields": {
          "sku": "pp102",
-         "name": "Premium Roses",
+         "name": "Premium Roses" ,
          "description": "Long Stem Assorted Roses'",
          "price": 24.99,
          "category": 1,

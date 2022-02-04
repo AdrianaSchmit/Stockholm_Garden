@@ -63,6 +63,13 @@ margin-left: 100px;
     }   
 
 
+    .form-row {
+       display: inline-block;
+       
+            }
+      
+         
+
 
 /* -------------------------------- Media Queries */
 
