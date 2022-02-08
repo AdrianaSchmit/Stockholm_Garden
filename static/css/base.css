@@ -1,111 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
-   
 html {
     height: 100%;
 }
 
+/*------------------------------------------------------------------------------------------------ base.html nav*/
 
-#delivery-banner{
+.navbar-expand-lg {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+
+#delivery-banner {
     margin-bottom: 0;
     background-color: black;
     color: aliceblue;
-
-    }
+}
 
 
 #secondnav {
-margin-top: 0;
+    margin-top: 0;
 }
 
-#coverimage {
+.navbar a{
+    color: black;
+}
+
+
+/*------------------------------------------------------------------------------------------------ home.html */
+
+#homeimage {
+    background: url('/media/cover3.jpg') no-repeat center center fixed;
+    background-size: 95%;
+    height: 700px;
+    position: relative;
+    margin-top: 0;
+}
+
+
+#imagebanner {
+
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+
+.card-title {
+    background-color: #FFFFFFD9;
+    font-family: 'Yeseva One', sans-serif;
+    width: 400px;
+    font-size: 3rem;
+    height: 80px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+#card-title-3 {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+#imagebanner2 {
+    background-color: #DEBE48D9;
+    color: #FFFFFF;
+    width: 550px;
+    height: 750px;
+    margin-left: 1300px;
+    margin-top: 0px;
+    font-family: 'Yeseva One', sans-serif;
+    text-align: center;
+    padding-top: 180PX;
+}
+
+
+#shop-now-button {
+    background-color: #443b2c;
+    font-family: 'Yeseva One', sans-serif;
+}
+
+/*scrollbar*/
+
+.scrolling-wrapper{
+	overflow-x: auto;
+
+}
+
+
+.card-block{
+	height: 300px;
+    width: 400px;
+	background-color: #fff;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	
+}
+
+.card-1{
     background: url('/media/cover3.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 900px;
-  
 }
 
+.card-2{
+    background: url('/media/plant6.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card-3{
+    background: url('/media/plant15.webp') no-repeat center center fixed;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------  */
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-img{
-    width: 200px; 
+img {
+    width: 200px;
     height: 200px;
     object-fit: cover;
 }
 
 
 
-#sidenav
- {
-margin-left: 100px;
-    }
- 
-    
-    .btn-outline-black {
-        background: white;
-        color: black !important; /* use important to override link colors for <a> elements */
-        border: 1px solid black;
-    }
-    
-    
-    .btn-outline-black:hover,
-    .btn-outline-black:active,
-    .btn-outline-black:focus {
-        background: black;
-        color: white !important;
-    }   
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
 
 
-    .form-row {
-       display: inline-block;
-       
-            }
-      
-         
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
 
 
-/* -------------------------------- Media Queries */
+
+
+/* ----------------------------------------------------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 200px;
-      }
-  }
-  
-  /* pad the top a bit when navbar is collapsed on mobile */
-  @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
-  
-      body {
-          height: calc(100vh - 116px);
-      }
-  }
+}
 
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 
+    .header-container {
+        padding-top: 180px;
+    }
+}
 
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
 
+    body {
+        height: calc(100vh - 116px);
+    }
+}

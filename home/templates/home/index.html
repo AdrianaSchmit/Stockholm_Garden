@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-<!-- <div class="container header-container">
+<div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
@@ -10,48 +10,83 @@
 {% endblock %}
 
 {% block content %}
+<div id="container" class="justify-between">
+<div class="card text-black">
+    <div class="card-img" id="homeimage">
 
-<!-- <div> 
+        
+        <div class="card-img-overlay col-4" id="imagebanner">
+            <div>
+                <h1 class="card-title" id="card-title-1">Touching the </h1> 
+            </div>
+            <div>
+                <h1 class="card-title" id="card-title-2"> hearts of all</h1>
+            </div>
+            <div>
+                <h1 class="card-title" id="card-title-3">plants lovers.</h1>
 
-<div id="paper">
-    <div class=" overlay col-4">
-        <h1 class="display-4 logo-font text-black">
-            Touching the
+            </div>
+        </div>
+    </div>
+
+    <div class="card-img-overlay col-4 justify-between justify-content-end" id="imagebanner2">
+        <h1 class="flex flex-col items-center md:items-start justify-start text-xl md:text-6xl">
+            Garden Stockholm Valentine's Day
         </h1>
-    </div>
-    <div id="banner" class="col-4 justify-content-right ">
-
-        <h1>Your online warehouse</h1>
-        <p> Garden Stockholm is your one-stop shop for all plant related goodness. It’s a place to learn how to become the best possible plant parent and connect with other plant lovers throughout Europe</p>
+        <p>
+            On 14 February it is Valentine's Day! What is more fun than giving a gift that will keep on growing, just like love? 
+            In our webshop you will find the cutest plants for your loved ones and for yourself. We have already listed our favourites for your inspiration.
+        </p>
+       
         <h4>
-            <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+            <a href="{% url 'products' %}" class=" btn btn-lg btn btn-secondary rounded-pill text-uppercase py-3 text-white" id="shop-now-button" >Shop Now</a>
         </h4>
+
+    </div>
+
+</div>
+
+
+
+<section>
+
+<div class="container-fluid">
+<h1>Best Sellers</h1>
+    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+			
+			<div class="col-4">
+				<div class="card card-block card-1"></div>  
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-2"></div>
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-3"></div>
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-4"></div>
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-5"></div>
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-6"></div>
+			</div>
+			<div class="col-4">
+				<div class="card card-block card-7"></div>
+            </div>
     </div>
 </div>
+</section>
 
 
-
-<div class="col-4  overlay ">
-    <h1 class="display-4 logo-font text-black ">
-        hearts of all
-    </h1>
-
-</div>
-
-<div class="col-4  overlay">
-    <h1 class="display-4 logo-font text-black">
-        Plants lovers.
-    </h1>
-</div>
+<section>
+    <h1>Sobscribe?</h1>
+</section>
 
 
-
-</div> -->
-
-
-<div id="coverimage">
-
-</div>
-
-
-{% endblock %}
+<footer>
+    <h1>FOOTER</h1>
+</footer>
+</html>
+    {% endblock %}
