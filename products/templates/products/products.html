@@ -34,8 +34,12 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                <div class="card-body pb-0">               
+                                        <div class=" d-flex justify-content-between">
+                                            <div>{{ product.name }} </div>
+                                            <div><a href="">  <i class="fas fa-heart "></i> </a></div>
+                                        </div>
+                            
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
