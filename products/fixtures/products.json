@@ -18,6 +18,34 @@
       "model": "products.product",
       "fields": {
          "sku": "pp102",
+         "name": "Portulaca Oleracea, 10 O Clock",
+         "description": "Oleracea is mostly annual, but it may be perennial in the tropics. Stems are purplish-red to green, forming mats. The leaves are fleshy. Flowers come in a group at the end of the stem. There are notched 4/5/6 petals.",
+         "price": 35.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant35.jpg"
+      }
+   },
+   {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp103",
+         "name": "Hydrangea macrophylla",
+         "description": "Hydrangea macrophylla is a perennial shrub that has the unique ability to re-bloom throughout the spring and summer months",
+         "price": 44.99,
+         "category": 1,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant36.jpg"
+      }
+   },
+   {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp104",
          "name": "Premium Roses" ,
          "description": "Long Stem Assorted Roses'",
          "price": 24.99,
@@ -28,10 +56,10 @@
       }
    },
    {
-      "pk": 3,
+      "pk": 5,
       "model": "products.product",
       "fields": {
-         "sku": "pp103",
+         "sku": "pp105",
          "name": "Red Roses",
          "description": "What red roses do to one's eyes. Show the special someone in your life how much you care with timelessly beautiful red roses",
          "price": 34.55,
@@ -42,10 +70,10 @@
       }
    },
    {
-      "pk": 4,
+      "pk": 6,
       "model": "products.product",
       "fields": {
-         "sku": "pp104",
+         "sku": "pp106",
          "name": "Rainbow Roses",
          "description": "A beautiful classic choice, mixed roses are the perfect gift to send to a friend or a loved one",
          "price": 44.99,
@@ -56,10 +84,10 @@
       }
    }, 
    {
-      "pk": 5,
+      "pk": 7,
       "model": "products.product",
       "fields": {
-         "sku": "pp105",
+         "sku": "pp107",
          "name": "Clear Blue Skies Bouquet",
          "description": "Our Clear Blue Skies Bouquet is arranged to reflect the beauty of a beautiful day where the sun is shining without a cloud in the sky",
          "price": 54.99,
@@ -70,10 +98,10 @@
       }
    },
    {
-      "pk": 6,
+      "pk": 8,
       "model": "products.product",
       "fields": {
-         "sku": "pp106",
+         "sku": "pp108",
          "name": "Serenity and Bliss",
          "description": "A simple way to express you love without saying anything",
          "price": 19.99,
@@ -84,10 +112,10 @@
       }
    }, 
    {
-      "pk": 7,
+      "pk": 9,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp109",
          "name": "MONEY TREE PLANT",
          "description": "they say money doesn't grow on a tree",
          "price": 98.99,
@@ -98,10 +126,10 @@
       }
    }, 
    {
-      "pk": 8,
+      "pk": 10,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp110",
          "name": "BURST OF SPRING BULB GARDEN",
          "description": "Drought tolerant, water only when soil is dry to touch'",
          "price": 13.99,
@@ -112,10 +140,10 @@
       }
    }, 
    {
-      "pk": 9,
+      "pk": 11,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp111",
          "name": "ALOE VERA PLANT",
          "description": "Aloe plants love bright, direct full sun or indirect light; the kitchen windowsill is a favorite spot",
          "price": 33.99,
@@ -126,10 +154,10 @@
       }
    }, 
    {
-      "pk": 10,
+      "pk": 12,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp112",
          "name": "SWEET HEART BAMBOO",
          "description": "Best in 3-4 hours of bright filtered sunlight",
          "price": 10.99,
@@ -138,11 +166,12 @@
          "image_url": "#",
          "image": "plant10.webp"
       }
-   }, {
-      "pk": 11,
+   }, 
+   {
+      "pk": 13,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp113",
          "name": "HOYA HEART SUCCULENT",
          "description": "Keep in bright artificial light indoors or near a window without direct sun",
          "price": 14.99,
@@ -153,10 +182,10 @@
       }
    }, 
    {
-      "pk": 12,
+      "pk": 14,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp114",
          "name": "Kokedama",
          "description": "Thrives in bright, indirect light but will tolerate lower light conditions.",
          "price": 73.99,
@@ -167,10 +196,38 @@
       }
    },
    {
-      "pk": 13,
+      "pk": 15,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp115",
+         "name": "Adiantium capillus-veneri Maidenhair Fern",
+         "description": "'Maidenhair Fern' actually refers to the genus Adiantum, which has over 250 species.",
+         "price": 12.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant37.jpg"
+      }
+   },
+   {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp116",
+         "name": "Areca Palm",
+         "description": "The areca palm (Chrysalidocarpus lutescens or Dypsis lutescens), also called the yellow butterfly palm and golden cane palm is one of the easiest palm trees to grow indoor.",
+         "price": 73.99,
+         "category": 2,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant38.jpg"
+      }
+   },
+   {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp117",
          "name": "Moses Stentavlor",
          "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
          "price": 3.99,
@@ -181,10 +238,10 @@
       }
    },
    {
-      "pk": 14,
+      "pk": 18,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp118",
          "name": "Caladium White Queen",
          "description": "Illuminate a shady spot with this jazzy and bright number, Caladium",
          "price": 53.99,
@@ -195,10 +252,10 @@
       }
    },
    {
-      "pk": 15,
+      "pk": 19,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp119",
          "name": "Gloxinia Kaiser Wilhelm",
          "description": "Like Gloxinia 'Kaiser Friedrich', this stunning bloom bears the name of a German emperor",
          "price": 5.99,
@@ -209,10 +266,10 @@
       }
    },
    {
-      "pk": 16,
+      "pk": 20,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp120",
          "name": "Gloxinia Kaiser Friedrich",
          "description": "Gloxinia 'Kaiser Friedrich' deserves to bear the name of an emperor and a king'",
          "price": 53.99,
@@ -223,13 +280,13 @@
       }
    }, 
    {
-      "pk": 17,
+      "pk": 21,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp121",
          "name": "Gloxinia Mont Blanc",
          "description": "This pure, frilly and exceptionally pristine plant is sure to brighten your home and give a sense of serenity to your environment",
-         "price": 31.99,
+         "price": 32.99,
          "category": 3,
          "rating": 4.6,
          "image_url": "#",
@@ -237,10 +294,10 @@
       }
    },
    {
-      "pk": 18,
+      "pk": 22,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp122",
          "name": "Oxalis triangularis",
          "description": "Often referred to as the purple shamrock, this beautiful and curious plant actually has nothing to do with Ireland—it comes from Brazil!",
          "price": 12.99,
@@ -251,13 +308,41 @@
       }
    },
    {
-      "pk": 19,
+      "pk": 23,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp123",
+         "name": "Calathea Orbifolia",
+         "description": "Calathea orbifolia is a beautiful houseplant highly sought after due to the exquisite beauty of its large, round leaves and its air-purifying qualities. ",
+         "price": 21.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant39.jpg"
+      }
+   },
+   {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp124",
+         "name": "Schefflera 'Umbrella Plant'",
+         "description": "The Umbrella plant is the dwarf version of the larger Schefflera Acrinophylla native to Taiwan. ",
+         "price": 12.99,
+         "category": 3,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant40.jpg"
+      }
+   },
+   {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp125",
          "name": "Case Study Ceramics",
          "description": "The Case Study Ceramic planter is what mid-century modern dreams are made of",
-         "price": 53.99,
+         "price": 10.99,
          "category": 4,
          "rating": 4.6,
          "image_url": "#",
@@ -265,13 +350,13 @@
       }
    },
    {
-      "pk": 20,
+      "pk": 26,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp126",
          "name": "Large Dracaena",
          "description": "The Dracaena livens up indoor spaces with a verdant hue and corn stalk-like silhouette",
-         "price": 99.99,
+         "price": 20.99,
          "category": 4,
          "rating": 4.6,
          "image_url": "#",
@@ -279,13 +364,13 @@
       }
    },
    {
-      "pk": 21,
+      "pk": 27,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp127",
          "name": "Large Bird of Paradise",
          "description": "With its broad vibrant green leaves, the Bird of Paradise brings a touch of the tropics to any room.",
-         "price": 83.99,
+         "price": 21.99,
          "category": 4,
          "rating": 4.6,
          "image_url": "#",
@@ -293,10 +378,10 @@
       }
    },
    {
-      "pk": 22,
+      "pk": 28,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp128",
          "name": "Large Schefflera Arboricola",
          "description": "The Schefflera Arboricola features a single or braided trunk and tree-like clusters of leaflets, which have been likened to umbrellas, wheels, and octopi",
          "price": 23.99,
@@ -307,10 +392,10 @@
       }
    },
    {
-      "pk": 23,
+      "pk": 29,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp129",
          "name": "Large Monstera Adansonii",
          "description": "Monstera Adansonii are born without holes, and one of the most interesting parts of parenting these plants is watching as their fenestration patterns emerge",
          "price": 76.99,
@@ -321,17 +406,229 @@
       }
    },
    {
-      "pk": 24,
+      "pk": 30,
       "model": "products.product",
       "fields": {
-         "sku": "pp101",
+         "sku": "pp130",
          "name": "Large Majesty Palm",
          "description": "The Majesty Palm is a popular tropical palm known for its graceful, long green fronds",
-         "price":93.99,
+         "price":23.99,
          "category": 4,
          "rating": 4.6,
          "image_url": "#",
          "image": "plant24.webp"
       }
+   },
+   {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp131",
+         "name": "Table Top / Office Desk Plants",
+         "description": "This pack contains 3 air purifier plants + 3 colored pots.Luckily, there are a number of houseplants that act as efficient purifier",
+         "price":15.99,
+         "category": 4,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant41.jpg"
+      }
+   },
+   {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp132",
+         "name": "Sansevieria cylindrica 'Snake Plant Braided'",
+         "description": "This evergreen perennial native to tropical West Africa and Nigeria, is a great addition to any office or household as a natural air purifie",
+         "price":30.99,
+         "category": 4,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant42.jpg"
+      }
+   },
+   {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp133",
+         "name": "Aloe Distans Potted in 1 gallon",
+         "description": "Aloe Distans, lots of pups, shipped in its 1 gallon nursery container.",
+         "price":44.00,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant27.jpg"
+      }
+   },
+   {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp134",
+         "name": "Everything' Pack",
+         "description": "With so many beautiful plants to choose from, picking out a group to take home can be tough, but we're here to help!",
+         "price":5.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant28.jpg"
+      }
+   },
+   {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp135",
+         "name": "Sedum 'Pork and Beans'",
+         "description": "Native to the harsh landscapes of Mexico, Pork and Beans thrives in full sunlight and a porous soil mixture, mimicking the desert environment to which it is best adapted.",
+         "price":8.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant29.jpg"
+      }
+   },
+   {
+      "pk": 36,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp136",
+         "name": "Mammillaria bombycina 'Silken Pincushion'",
+         "description": "An absolute stunner of a specimen, Mammillaria bombycina Silken Pincushion features a typically solitary, columnar stem with a rich bluish green base hue",
+         "price":5.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant30.jpg"
+      }
+   },
+   {
+      "pk": 37,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp137",
+         "name": "'Spikey™' Pack",
+         "description": "Cacti are some of the most beautiful succulents out there, so we've developed a pack just for them!  From their geometry to their amazing blooms, cacti just can't be beat.",
+         "price":30.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant31.jpg"
+      }
+   },
+   {
+      "pk": 38,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp138",
+         "name": "Echeveria Violet Queen",
+         "description": "This fast growing and hardy succulent variety dazzles with layers upon layers of concentric, pointed leaves in tones of silvery blue.",
+         "price":7.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant32.webp"
+      }
+   },
+   {
+      "pk": 39,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp139",
+         "name": "Aeonium Kiwi",
+         "description": "Aeonium Kiwi is a tri-color succulent shrub featuring leaves with serrated pink margins surrounding a gradient of green tones, from bright lime to rich kelly green",
+         "price":4.50,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant33.jpg"
+      }
+   },
+   {
+      "pk": 40,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp140",
+         "name": "Trichodiadema densum African Bonsai",
+         "description": "Rich green, finger-like stems create the mat of foliage unique to Trichodiadema densum African Bonsai, which is offset by spidery clusters of white, hair-like spines at the tip of each stem",
+         "price": 37.99,
+         "category": 5,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant34.jpg"
+      }
+   },
+   {
+      "pk": 41,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp103",
+         "name": "Hydrangea macrophylla",
+         "description": "Hydrangea macrophylla is a perennial shrub that has the unique ability to re-bloom throughout the spring and summer months",
+         "price": 44.99,
+         "category": 6,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant36.jpg"
+      }
+   },
+   {
+      "pk": 42,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp112",
+         "name": "SWEET HEART BAMBOO",
+         "description": "Best in 3-4 hours of bright filtered sunlight",
+         "price": 10.99,
+         "category": 6,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant10.webp"
+      }
+   }, 
+   {
+      "pk": 43,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp114",
+         "name": "Kokedama",
+         "description": "Thrives in bright, indirect light but will tolerate lower light conditions.",
+         "price": 73.99,
+         "category": 6,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant12.webp"
+      }
+   },
+   {
+      "pk": 44,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp102",
+         "name": "Portulaca Oleracea, 10 O Clock",
+         "description": "Oleracea is mostly annual, but it may be perennial in the tropics. Stems are purplish-red to green, forming mats. The leaves are fleshy. Flowers come in a group at the end of the stem. There are notched 4/5/6 petals.",
+         "price": 35.99,
+         "category": 6,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant35.jpg"
+      }
+   },
+   {
+      "pk": 45,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp139",
+         "name": "Aeonium Kiwi",
+         "description": "Aeonium Kiwi is a tri-color succulent shrub featuring leaves with serrated pink margins surrounding a gradient of green tones, from bright lime to rich kelly green",
+         "price":4.50,
+         "category": 6,
+         "rating": 4.6,
+         "image_url": "#",
+         "image": "plant33.jpg"
+      }
    }
+
+
 ]
