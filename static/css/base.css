@@ -150,6 +150,14 @@ html {
 }
 
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
+
 
 .card img{
  height: 550px;
@@ -192,3 +200,5 @@ html {
         height: calc(100vh - 116px);
     }
 }
+
+
