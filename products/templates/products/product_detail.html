@@ -50,6 +50,18 @@
                         {% csrf_token %}
                     
                         <div class="form-row">
+                            {% with product.has_sizes as c %}
+                            {% if c %}
+                                <div class="col-12">
+                                    <p><strong>Size:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_color" id='id_product_color'>
+                                        <option value="green"> Green</option>
+                                        <option value="blue"> Blue</option>
+                                        <option value="brown" selected>Brown</option>
+
+                                    </select>
+                                </div>
+                            {% endif %}
                             <div class="col-6 form-row">
                                 <p class="mt-3 inline "><strong>Quantity:</strong></p>
                             </div>
@@ -61,7 +73,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col{% if s %}-12 mt-2{% endif %}">
                                <!--  <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
@@ -71,6 +83,7 @@
                                 <input type="submit" class="btn btn-black bg-warning text-dark rounded-pill text-uppercase mt-5" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% endwith %}
                         </div>
                     </form>
                 </div>
