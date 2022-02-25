@@ -117,29 +117,46 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
 
 
-                        <div class="container">
-                            <div class="row mt-5">
-
-                                <div class="col-6" style="border-right: 1px solid black;"> 
-                                    <img src="{{'/media/delivery.svg'}}" alt="" style="width: 60px;">
-                                    <p>Free shipping from €50,-</p>
-                                    <p>We ship our plants all over Europe!</p>
-                                </div>
-                                <div class="col-6"> 
-                                    <img src="{{'/media/garanti.svg'}}" alt="" style="width: 50px; text-align: center;">
-                                    <p>Free shipping from €50,-</p>
-                                    <p>We ship our plants all over Europe!</p>
-                                </div>
-
-                            </div>
-                        </div>
-
+                
 
                      
                     </div>
                 </form>
+
+        <!-- favorites -->
+        <form class="form" action="{% url 'add_to_favorites' product.id %}" method="POST">
+            {% csrf_token %}
+            <div class="form-row">
+            
+
+                <div class="col-12">
+
+                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to favorites">
+                </div>
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+            </div>
+        </form>
+
+
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-4" style="background-color: #F3F4F3;">
+
+        <div class="col-6" style="border-right: 1px solid black; margin: auto; text-align: center;"> 
+            <img src="{{'/media/delivery.svg'}}" alt="" style="width: 60px;">
+            <p>Free shipping from €50,-</p>
+            <p>We ship our plants all over Europe!</p>
+        </div>
+        <div class="col-6" style=" margin: auto; text-align: center;"> 
+            <img src="{{'/media/garanti.svg'}}" alt="" style="width: 50px; ">
+            <p>30 day health guarantee</p>
+            <p>For all our happy plants.</p>
+        </div>
+
     </div>
 </div>
 
