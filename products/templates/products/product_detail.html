@@ -46,6 +46,9 @@
                 <hr>
                 <p class="mt-3">{{ product.description }}</p>
                 <hr>
+               
+              <!--   ADD TO CART FORM -->
+               
                 <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                     {% csrf_token %}
 
@@ -116,10 +119,6 @@
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
 
-
-                
-
-                     
                     </div>
                 </form>
 
@@ -142,6 +141,9 @@
         </div>
     </div>
 </div>
+
+
+
 
 <div class="container-fluid">
     <div class="row mt-4" style="background-color: #F3F4F3;">

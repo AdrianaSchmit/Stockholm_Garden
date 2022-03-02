@@ -1,39 +1,90 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+<div class="overlay"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+           
+            <h1 class="logo-font mb-4" id="favorite_title">Your favorites</h1>
+    
         </div>
     </div>
-{% endblock %}
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping favorites</h2>
-                <hr>
-            </div>
-        </div>
+    <div class="row" id="favorite_content">
+        <div class="col">
+            {% if favorites_items %}
+                <div class="table-responsive rounded">
+                    <table class="table table-sm table-borderless">
+                        <thead class="text-black">
+                            <tr>
+                                <th scope="col"></th>
+                            
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
 
-        <div class="row">
-            <div class="col">
-                {% if favorites_items %}
-                    <div class="table-responsive rounded"></div>
-                {% else %}
-                    <p class="lead mb-5">You have no favorite item yet.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Continue shopping</span>
-                    </a>
-                {% endif %}
-            </div>
+                        {% for item in favorites_items %}
+
+                            <tr  style="border-bottom:1px solid">
+   
+                                <td class="p-3 w-25">
+                                    <a href="{% url 'product_detail' item.product.id %}">
+                               <img class="img-fluid rounded" src="{{ item.product.image.url }}" style="width: 150px; height: 182px;"> 
+                            </a>
+                                </td>
+                               
+                 
+                      
+                                <td class="py-3">
+                                    <p class="my-0"><strong>{{ item.product.name}}</strong></p>
+                                    <p class="my-0 small text-muted">{{ item.product.description }}</p>
+                                  
+                              
+
+                                </td>
+                                <td class="py-3">
+                                    <p class="my-0">${{ item.product.price }}</p>
+                                </td>
+
+                                <td class="py-3">
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><i class="fa fa-trash" aria-hidden="true"  style="color: black;"></i></a>
+                                </td>
+                            </tr>
+
+                    
+                       
+                        {% endfor %}
+
+                     
+                        <tr>
+                            <td colspan="5" class="text-right">
+                                <a href="{% url 'checkout' %}" class="btn btn-black btn-warning rounded-0 btn-lg">
+                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                  
+                    </table>
+                </div>
+            {% else %}
+                <p class="lead mb-5">Your have no favorite.</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Shopping</span>
+                </a>
+            {% endif %}
         </div>
     </div>
+</div>
+
+
 {% endblock %}
