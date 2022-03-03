@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 def cart_contents(request):
+    """ context docstring """
 
     cart_items = []
     total = 0
@@ -52,3 +53,5 @@ def cart_contents(request):
     }
 
     return context
+
+    
