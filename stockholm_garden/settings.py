@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@vhux497oimq&%*+294_$+$)o74h&ak+4o7s)pg1vw*a*^=fl1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gardenstockholm.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -123,12 +123,17 @@ WSGI_APPLICATION = 'stockholm_garden.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     } 
-} 
 
 #DATABASES = {
  #   'default': dj_database_url.parse( 'postgres://zjmvbsvcugtrat:7aea83c6e8a42795fff5980632c9a25c299d51711b9800ea8f67fab11be4d29b@ec2-176-34-105-15.eu-west-1.compute.amazonaws.com:5432/ddp98165tovsv3')
