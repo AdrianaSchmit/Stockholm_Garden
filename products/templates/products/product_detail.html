@@ -11,13 +11,13 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid">
+<div class="container-fluid" >
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}" style="width: 600px; height: 700px;">
                 </a>
                 {% else %}
                 <a href="">
@@ -156,10 +156,31 @@
         </form>
 
 
+
+        {% if user.is_authenticated %}
+<div>
+<a class="btn btn-black bg-warning text-dark w-50 text-uppercase mt-5" href="{% url 'add_to_reviews' product.id %}"> POST REVIEW</a>
+</div>
+{% endif %}
+
+
+
+
+
             </div>
         </div>
     </div>
 </div>
+
+{% if reviews %}
+
+{% for review in reviews %}
+
+<p> {{ review.text }}</p>
+<h3>review.rating</h3>
+
+{% endfor %}
+{% endif %}
 
 
 
