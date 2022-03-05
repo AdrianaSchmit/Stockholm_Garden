@@ -1,22 +1,22 @@
-
+{% extends "base.html" %}
 
 {% load static %}
 
 
 {% block content %}
-<div class="container mb-2">
+<div class="container">
     <div class="row">
         <div class="col">
 
-            <h1 class="logo-font mb-4" id="favorite_title">Products Reviews</h1>
+            <h1 class="logo-font mb-4" id="favorite_title">Add Review</h1>
 
         </div>
     </div>
 
-    <div class="row" id="favorite_content">
+    <div class="row" >
 
-        <header class="mb-4"><h4 class="card-title">Add Review</h4></header>
-		<form action="{% url 'add_to_reviews' product.id %}" method="POST">
+
+		<form  action="{% url 'add_to_reviews' product.id %}" method="POST">
       {% csrf_token %}
 
 
@@ -24,33 +24,53 @@
 					<div class="col form-group">
 						<label>Product</label>
 					  	{{ form.product }}
-					</div> <!-- form-group end.// -->
+					</div> 
 
-				</div> <!-- form-row end.// -->
+				</div> 
 
 
 				<div class="form-row">
-					<div class="col form-group">
+					<div class="col-12 form-group">
 						<label>Review</label>
 					  	{{ form.text }}
-					</div> <!-- form-group end.// -->
-				</div> <!-- form-row.// -->
+
+				</div> 
 				<div class="form-row">
-					<div class="col form-group">
+					<div class="col-12 form-group">
 						<label>Rating</label>
-					  	{{ form.rating }}
-					</div> <!-- form-group end.// -->
-					</div> <!-- form-group end.// -->
+						{{ form.rating }}
+<!-- 						  {% with form.rating as rate %}
+						  {% if rate %}
+						  <div class="col-12">
+						
+							  <select class="form-control rounded-0" name="product_color">
+								  <option value="5stars" selected>5 stars</option>
+								  <option value="4stars"> 4stars</option>
+								  <option value="3stars"> 3 stars</option>
+								  <option value="2stars"> 2 stars</option>
+								  <option value=""> <i class="fa-solid fa-star"></i></option>
+  
+							  </select>
+							
+						  </div>
+  
+						  {% endif %}
+						  {% endwith %} -->
+					</div> 
+					</div>
+			
 				</div>
 			    <div class="form-group">
+					<a href="{% url 'product_detail' product.id %}">
 			        <button type="submit" class="btn btn-primary btn-block"> Submit  </button>
-			    </div> <!-- form-group// -->
+				</a>
+			    </div> 
       {{ form.email.errors }}
       {{ form.non_field_errors }}
 			</form>
     </div>
 
 
-</div>
+	
 
     {% endblock %}

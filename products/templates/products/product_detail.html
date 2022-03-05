@@ -37,31 +37,7 @@
                     </a>
                 </p>
                 {% endif %}
-                {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1 text-warning fa-2xs"></i></small>
-                <button data-toggle="modal" data-target="#productReview" type="button" class="btn btn-warning btn-sm float-left reviewBtn">Add Review</button>
-<!-- Modal -->
-<div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="productReview" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="productReview">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Add Review
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                {% else %}
-                <small class="text-muted">No Rating</small>
 
-                {% endif %}
                 <hr>
                 <p class="mt-3">{{ product.description }}</p>
                 <hr>
@@ -149,7 +125,7 @@
 
                 <div class="col-12">
 
-                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to favorites">
+                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5 btn-warning" value="Add to favorites">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </div>
@@ -172,17 +148,22 @@
     </div>
 </div>
 
+<div class="container">
+<p style="color: #7e8784;">Reviews</p>
+<hr>
 {% if reviews %}
 
 {% for review in reviews %}
 
-<p> {{ review.text }}</p>
-<h3>review.rating</h3>
+<p> {{ review.product }} - <strong> {{ review.rating}} stars </strong></p>
 
+<p> {{ review.text }}</p>
+
+<hr>
 {% endfor %}
 {% endif %}
 
-
+</div>
 
 
 <div class="container-fluid">
