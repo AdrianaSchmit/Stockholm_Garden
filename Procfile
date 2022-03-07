@@ -1,1 +1,1 @@
-web: gunicorn gardenstockholm.wsgi:application
+web: gunicorn stockholm_garden.wsgi:application
