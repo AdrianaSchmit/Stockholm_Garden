@@ -1,108 +1,215 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Full Stack Development, 4th Milestone Code Institute.
 
-Welcome AdrianaSchmit,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Online Plants E-commerce Store. Stockholm Gaden.
+___
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View live project here](https://gardenstockholm.herokuapp.com/)
 
-## Gitpod Reminders
+A fictitious online store setup for study porposes. The company wants to reach as manymarket possible by selling their products online.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## User Experience (UX)
 
 ---
 
-Happy coding!
+
+
+### As a user I would like to:
+
+- I want an easy navigation website.
+- I want a easy way to acess to all products.
+- I want a variety of products to browse.
+- I want to have the option of browsing in categories.
+- I want to search for something specific with a keyword. 
+- I want to have my own account create it easily.
+- I want to be able to have a favorites list in my account.
+- I want to be able to checkout the products easily.
+- I want to see my order history.
+- I want feel safe when I purchase with credit card.
+- I want to be able to leave a review of the product.
+- I want to see contact informations in case I need support from the store.
+- I want to be able to access the site from any kind of device.
+
+### Website goals:
+
+- Provide clarity with a layout that satisfy the user needs.
+- provide the possibility of anyone  browse recipes without register.
+- provide the possibility to the costumer save his favorite items for future shopping. 
+- provide easy access to cart and check out.
+
+### Design
+
+- Typography
+    - The main fonts chosed for this project were "  EB+Garamond"and "Yeseva+One"
+
+
+ 
+
+
+## Wireframes
+
+----
+
+
+
+
+
+
+## Features
+
+----
+
+
+### Existing Features
+
+- Navigation Bar fixed.
+- Home page with hero image and links to shop.
+- Search functionallity.
+- Register and login page forms.
+- Shopping cart page.
+- Checkout page.
+- Favorites page.
+- Add review page.
+
+### Features Left to Implement
+
+- Fix the responsiveness.
+- Add a best selling section under the hero image.
+-  Add a subscribe now section and Implement it. 
+- Add a footer.
+- Add a contact form. 
+- Add zoom in or shadow to the product images. 
+- Add the delivery banner under the nav and pass it as carrousel on mobiles.
+- Create a new login and registration forms.
+- Have my favorites linked to the user account.
+- Allow user to choose color for the favorite item.
+- Allow user to send from the favorite directly to the shopping cart.
+- Fix functionality to remove products from favorites.
+- Have a number of the products added to favorites showing in the favorite icon on the navbar.
+- Have a model for leaving review instead of a form.
+- Redirect the client from the review to the product or products page.
+- Push the user name to show in the review.
+- Implement a star rating system.
+- Have a page to all reviews.
+- Have a filter products by price and type of plant care.
+
+
+
+## Technologies Used
+
+___
+
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JAVASCRIPT](https://pt.wikipedia.org/wiki/JavaScript)
+- [PYTHON](https://www.python.org/)
+
+
+### Frameworks, Libraries & Programs Used
+
+
+- [Bootstrap 4](https://getbootstrap.com/)
+   - Grid system and pre made classes to allow formatation and responsiveness.
+- [Django](https://www.djangoproject.com/)
+  -  framework for rapid development, database and management.
+- [JQuery](https://jquery.com/)
+  - used along with bootstrap.
+- [GIT](https://git-scm.com/)
+    - Git was used for version control by commiting to and Pushing to GitHub.
+- [Github](https://github.com/)
+    - GitHub is being used to store the project.
+
+- [Stripe](https://stripe.com/se)
+     - payment platform to validate and accept credit card payments securely.
+
+- [AWS S3](https://aws.amazon.com/s3/)
+
+    -  Used to store static files in the cloud.
+- [Heroku](https://dashboard.heroku.com/apps)
+
+
+## Testing
+
+----
+
+To be implemented.
+
+## Deployment
+
+----
+
+The project was deployed to GitHub Pages using the following steps...
+
+1 -Tell Heroku which applications are required to run by adding pip3 freeze --local > requirements.txt to CLI
+
+2 -Create Procfile - echo web:python app.py>Procfile
+
+3 -Login to Heroku.
+
+4 - Once logged in on your dashboard, we can click to Create a New App
+
+5 -Connect GitHub repository to Heroku.
+
+6 - Click on 'Reveal Config Vars', and tell Heroku which variables are required.
+
+7 - From the deploy section click Deploy Branch Click View
+
+### Making a Local Clone
+
+
+1 - Log in to GitHub and locate the [GitHub Repository](https://github.com/AdrianaSchmit/Stockholm_garden)
+
+2 - Under the repository name, by the left side of the green Gitpod button click in Code.
+
+3 - To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
+4 - Open Git Bash
+
+5 -Change the current working directory to the location where you want the cloned directory to be made.
+
+6 - Type git clone, and then paste the URL you copied in Step 3.
+
+7 - Press Enter. Your local clone will be created.
+
+8 - Click Deploy Branch
+
+9 - Click View to launch your new app.
+
+
+
+## Credits
+___
+
+### Content
+
+- content was written by the developer
+- Boutique Ado, Code institute - Shopping cart
+- Crispy forms - register, login, account and checkout 
+- Bootstrap throughout the project.
+- [ CodeInstituteSampleRead.me](https://github.com/Code-Institute-Solutions/SampleREADME) for the Deployment section
+
+
+
+### Acknowledgements
+
+Thanks to all the tutors , to my mentor and to the Student Care.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
