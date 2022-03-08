@@ -4,11 +4,11 @@
 html {
     height: 100%;
 }
-
+/* 
 body {
 
     padding-top: 230px;
-}
+} */
 
 /*------------------------------------------------------------------------------------------------ base.html nav*/
 
@@ -44,11 +44,14 @@ body {
 #homeimage {
     background: url('/media/cover3.jpg') no-repeat center center fixed;
     object-fit: cover;
-    background-size: 95%;
-    height: 700px;
+   background-size: 100%;
+    height: 1000px;  
     position: relative;
     margin-top: 0;  
+
 }
+
+
 
 #imagebanner {
 
@@ -59,7 +62,7 @@ body {
 .card-title {
     background-color: #FFFFFFD9;
     font-family: 'Yeseva One', sans-serif;
-    width: 400px;
+    max-width: 400px;
     font-size: 3rem;
     height: 80px;
     text-align: center;
@@ -74,8 +77,8 @@ body {
 #imagebanner2 {
     background-color: #DEBE48D9;
     color: #FFFFFF;
-    width: 550px;
-    height: 755px;
+    max-width: 550px;
+    min-height: 755px;
     margin-left: 1300px;
     margin-top: 0px;
     font-family: "EB+Garamond", sans-serif;
@@ -109,257 +112,6 @@ body {
     text-align: center;
     padding-bottom: 70px;
 }
-
-/* .scrolling-wrapper{
-	overflow-x: auto;
-		width: 70%;
-	margin:auto;
-	 
-}
-
-
-.card-block{
-	height: 350px;
-	width: 300px;
-	background-color: #fff;
-	border: none;
-	background-position: center;
-	background-size: cover;
-	transition: all 0.2s ease-in-out !important;
-	&:hover{
-		transform: translateY(-5px);
-		box-shadow: none;
-		opacity: 0.9;
-	}
-}
-
-
-.card-1 {
-    background: url('/media/plant27.jpg') no-repeat center center fixed;
-    background-size: cover;
-
-
-}
-
-.card-2 {
-    background: url('/media/plant6.webp') no-repeat center center fixed;
-    background-size: cover;
-  
-}
-
-.card-3 {
-    background: url('/media/plant15.webp') no-repeat center center fixed;
-    background-size: cover;
-}
-
-
- */
-
- img{
-    background-repeat: no-repeat;
-    background: fixed center center;
-    background-size: auto;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-         
-  }
-  
-  .product-front{
-  /* 	width:340px;
-      height:500px; */
-  /* 	width:335px;
-      height:500px; */
-      background:#fff;
-      position:absolute;
-      /*left:-5px;
-      top:-5px;*/
-      -webkit-transition: all 100ms ease-out; 
-         -moz-transition: all 100ms ease-out; 
-           -o-transition: all 100ms ease-out; 
-              transition: all 100ms ease-out; 
-  }
-  
-  
-  .product-card.animate, .product-card.animate {
-      top:0px;
-      left:0px;
-      -webkit-transition: all 100ms ease-out; 
-         -moz-transition: all 100ms ease-out; 
-           -o-transition: all 100ms ease-out; 
-              transition: all 100ms ease-out;  
-  }
-  .product-card{
-      
-      width:380px;
-      height:490px;  
-      position:absolute;    
-      /*top:10px;
-      left:10px;	*/
-      overflow:hidden;
-      transform-style: preserve-3d;
-      -webkit-transition:  100ms ease-out; 
-         -moz-transition:  100ms ease-out; 
-           -o-transition:  100ms ease-out; 
-              transition:  100ms ease-out;
-  }
-  
-  
-  .product-card.animate{
-      top:5px;
-      left:5px;
-      width:335px;
-      height:500px;
-      box-shadow:0px 13px 21px -5px rgba(0, 0, 0, 0.3);
-      -webkit-transition:  100ms ease-out; 
-         -moz-transition:  100ms ease-out; 
-           -o-transition:  100ms ease-out; 
-              transition:  100ms ease-out; 
-  } 
-  .stats-container{
-      background:#fff;	
-      position:absolute;
-      
-      top:386px;
-      left:0;
-      width:335px;
-      height:200px;
-      padding:27px 35px 35px;	
-      -webkit-transition: all 200ms ease-out; 
-         -moz-transition: all 200ms ease-out; 
-           -o-transition: all 200ms ease-out; 
-              transition: all 200ms ease-out; 
-  }
-  .product-card.animate .stats-container{
-       top:272px;
-      -webkit-transition: all 200ms ease-out; 
-         -moz-transition: all 200ms ease-out; 
-           -o-transition: all 200ms ease-out; 
-              transition: all 200ms ease-out;  
-  }
-  .stats-container .product_name{
-      font-size:22px;
-      color:#393c45;	
-  }
-  .stats-container p{
-      font-size:16px;
-      color:#b1b1b3;	
-      padding:2px 0 20px 0;
-  }
-  .stats-container .product_price{
-      float:right;
-      color:#48cfad;
-      font-size:22px;
-      font-weight:600;
-  }
-  .image_overlay{
-      position:absolute;
-      top:0;
-      left:0; 
-      width:100%;
-      height:100%;
-      background: #DEBE48D9;
-      opacity:0;	
-  }
-  .product-card.animate .image_overlay{
-      opacity:0.7;	
-      -webkit-transition: all 200ms ease-out; 
-         -moz-transition: all 200ms ease-out; 
-           -o-transition: all 200ms ease-out; 
-              transition: all 200ms ease-out; 
-  }
-  .product-options{
-      padding:2px 0 0;
-  }
-  .product-options strong{
-      font-weight:700;
-      color:#393c45;
-      font-size:14px;
-  }
-  .product-options span{	
-      color:#969699;
-      font-size:14px;
-      display:block;
-      margin-bottom:8px;
-  }
-  #view_details{	
-      position:absolute;
-      top:112px;
-      left:50%;
-      margin-left:-85px;	
-      border:2px solid #fff;
-      color:#fff;
-      font-size:19px;
-      text-align:center;
-      text-transform:uppercase;
-      font-weight:700;
-      padding:10px 0;
-      width:172px;	
-      opacity:0;
-      -webkit-transition: all 200ms ease-out; 
-         -moz-transition: all 200ms ease-out; 
-           -o-transition: all 200ms ease-out; 
-              transition: all 200ms ease-out; 
-  }
-  #view_details:hover{	
-      background:#fff;
-      color:#48cfad;
-      cursor:pointer;
-  
-  }
-  .product-card.animate #view_details{
-      opacity:1;
-      width:152px;
-      font-size:15px;
-      margin-left:-75px;
-      top:115px;
-      -webkit-transition: all 200ms ease-out; 
-         -moz-transition: all 200ms ease-out; 
-           -o-transition: all 200ms ease-out; 
-              transition: all 200ms ease-out; 		
-  }
-  div.colors div{
-      margin-top:3px;
-      width:15px; 
-      height:15px; 	
-      margin-right:5px;
-      float:left;
-  }
-  div.colors div span{
-      width:15px; 
-      height:15px; 
-      display:block;
-      border-radius:50%;
-  }
-  div.colors div span:hover{
-      width:17px;
-      height:17px;
-      margin:-1px 0 0 -1px;
-  }
-  div.c-blue span{background:#6e8cd5;}
-  div.c-red span{background:#f56060;}
-  div.c-green span{background:#44c28d;}
-  div.c-white span{
-      background:#fff;
-      width:14px;
-      height:14px; 
-      border:1px solid #e8e9eb;
-  }
-  div.shadow{
-      width:335px;height:520px;
-      opacity:0;
-      position:absolute;
-      top:0;
-      left:0;
-      z-index:3;
-      display:none;
-      background: -webkit-linear-gradient(left,rgba(0,0,0,0.1),rgba(0,0,0,0.2));
-      background: -o-linear-gradient(right,rgba(0,0,0,0.1),rgba(0,0,0,0.2)); 
-      background: -moz-linear-gradient(right,rgba(0,0,0,0.1),rgba(0,0,0,0.2)); 
-      background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.2)); 
-  }
-  
-  
 
 
 
@@ -488,7 +240,7 @@ input[name='q']::placeholder {
 
 
 
-/* ------------------------------- bootstrap toasts */
+/* --------------------------------------------------------------------- bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;
@@ -563,4 +315,58 @@ input[name='q']::placeholder {
 
 
 
-/* -------------------------------- Media Queries */
+/* --------------------------------------------------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 164px;
+      }
+  }
+
+
+  /* mobile landscape */
+@media screen and (max-width: 988px) {
+   
+    .extra-link {
+      display: none;
+    }
+
+    #delivery-banner{
+        display: none;
+      }
+    
+      #imagebanner {
+
+       padding-top: 100px;
+       place-items: center;
+    }
+
+    #imagebanner h1 {
+        font-size: 1.3rem;
+    }
+
+#imagebanner2{
+
+  display: none;
+ }
+
+
+    
+
+  }
