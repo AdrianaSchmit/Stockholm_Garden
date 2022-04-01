@@ -10,193 +10,84 @@
 {% endblock %}
 
 {% block content %}
+
 <div id="container-fluid" class="justify-between">
+
     <div class="card text-black">
         <div class="card-img" id="homeimage">
 
+            <div class="row ">
 
-            <div class="card-img-overlay col-4" id="imagebanner">
-                <div>
-                    <h1 class="card-title" id="card-title-1">Touching the </h1>
-                </div>
-                <div>
-                    <h1 class="card-title" id="card-title-2"> hearts of all</h1>
-                </div>
-                <div>
-                    <h1 class="card-title" id="card-title-3">plants lovers.</h1>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="card-img-overlay col-4 col-xs-12 justify-between justify-content-end" id="imagebanner2">
-            <h1 class="flex flex-col items-center md:items-start justify-start text-xl md:text-6xl">
-                Your online warehouse
-            </h1>
-            <p>
-                Stockholm Garden is your one-stop shop for all plant related goodness. It’s a place to learn how to become the best possible plant parent and connect with other plant lovers throughout Europe
-            </p>
-
-            <h4>
-                <a href="{% url 'products' %}"
-                    class=" btn btn-lg btn btn-secondary rounded-pill text-uppercase py-3 text-white"
-                    id="shop-now-button">Shop Now</a>
-            </h4>
-
-        </div>
-
-    </div>
-
-
-
-<!--     <section> to be implemented
-
-        <div class="container" id="best_sell">
-            <h1>Best Sellers</h1>
-
-            <div class="row  ">
-                <div class="make-3D-space col-3 col-xs-12">
-
-                    <div class="product-card">
-                        <div class="product-front">
-                            <div class="shadow"></div>
-                            <img src="media/plant16.webp" alt="" />
-                            <div class="image_overlay"></div>
-                            <div id="view_details">View Product</div>
-                            <div class="stats">
-                                <div class="stats-container">
-                                    <span class="product_price">$39</span>
-                                    <span class="product_name">plant name</span>
-                                    <p>plant description</p>
-
-                                    <div class="product-options">
-
-                                        <strong>COLORS</strong>
-                                        <div class="colors">
-                                            <div class="c-blue"><span></span></div>
-                                            <div class="c-red"><span></span></div>
-                                            <div class="c-white"><span></span></div>
-                                            <div class="c-green"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-6" id="banner">
+                    <div id="imagebanner">
+                        <div>
+                            <h1 class="card-title" id="card-title-1">Touching the </h1>
+                        </div>
+                        <div>
+                            <h1 class="card-title" id="card-title-2"> hearts of all</h1>
+                        </div>
+                        <div>
+                            <h1 class="card-title" id="card-title-3">plants lovers.</h1>
+                        </div>
+                        <div class=" d-block d-lg-none">
+                            <a href="{% url 'products' %}" class=" btn  btn  text-uppercase py-1 text-white"
+                                id="shop-now-button">Shop Now</a>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="make-3D-space col-3 col-xs-12">
-
-
-                    <div class="product-card">
-                        <div class="product-front">
-                            <div class="shadow"></div>
-                            <img src="media/plant8.webp" alt="" />
-                            <div class="image_overlay"></div>
-                            <div id="view_details">View details</div>
-                            <div class="stats">
-                                <div class="stats-container">
-                                    <span class="product_price">$39</span>
-                                    <span class="product_name">plant name</span>
-                                    <p>plant description</p>
-
-                                    <div class="product-options">
-
-                                        <strong>COLORS</strong>
-                                        <div class="colors">
-                                            <div class="c-blue"><span></span></div>
-                                            <div class="c-red"><span></span></div>
-                                            <div class="c-white"><span></span></div>
-                                            <div class="c-green"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="make-3D-space col-3 col-xs-12">
-
-
-                    <div class="product-card">
-                        <div class="product-front">
-                            <div class="shadow"></div>
-                            <img src="media/plant39.jpg" alt="" />
-                            <div class="image_overlay"></div>
-                            <div id="view_details">View details</div>
-                            <div class="stats">
-                                <div class="stats-container">
-                                    <span class="product_price">$39</span>
-                                    <span class="product_name">plant name</span>
-                                    <p>plant description</p>
-
-                                    <div class="product-options">
-
-                                        <strong>COLORS</strong>
-                                        <div class="colors">
-                                            <div class="c-blue"><span></span></div>
-                                            <div class="c-red"><span></span></div>
-                                            <div class="c-white"><span></span></div>
-                                            <div class="c-green"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="make-3D-space col-3 col-xs-12">
-
-
-                    <div class="product-card">
-                        <div class="product-front">
-                            <div class="shadow"></div>
-                            <img src="media/plant18.webp" alt="" />
-                            <div class="image_overlay"></div>
-                            <div id="view_details">View details</div>
-                            <div class="stats">
-                                <div class="stats-container">
-                                    <span class="product_price">$39</span>
-                                    <span class="product_name">plant name</span>
-                                    <p>plant description</p>
-
-                                    <div class="product-options">
-
-                                        <strong>COLORS</strong>
-                                        <div class="colors">
-                                            <div class="c-blue"><span></span></div>
-                                            <div class="c-red"><span></span></div>
-                                            <div class="c-white"><span></span></div>
-                                            <div class="c-green"><span></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-6 col-xs-12" style="text-align: center; ">
+                    <div class="" id="imagebanner2">
+                        <h1 class="flex flex-col items-center md:items-start justify-start text-xl md:text-6xl">
+                            Your online warehouse
+                        </h1>
+                        <p>
+                            Stockholm Garden is your one-stop shop for all plant related goodness. It’s a place to learn
+                            how to become the best possible plant parent and connect with other plant lovers throughout
+                            Europe
+                        </p>
+                        <h4>
+                            <a href="{% url 'products' %}"
+                                class=" btn btn-lg btn btn-secondary rounded-pill  text-uppercase py-2 text-white"
+                                id="shop-now-button">Shop Now</a>
+                        </h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
+<section>
+
+    <div class="container">
+        <h1 class="mt-5" style="text-align: center;">Best Sellers</h1>
+
+        <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 ">
+
+            <div class="col-3">
+
+                <div class="card card-block card-1 ">
+
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card card-block card-2"></div>
+            </div>
+            <div class="col-3">
+                <div class="card card-block card-3"></div>
+            </div>
+            <div class="col-3">
+                <div class="card card-block card-4"></div>
+            </div>
+            <div class="col-3">
+                <div class="card card-block card-5"></div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 </html>
-{% endblock %}
-
-<!-- {% block postloadjs %}
-<script type="text/javascript">
-    $('.product-card').hover(function () {
-        $(this).addClass('animate');
-        $('div.carouselNext, div.carouselPrev').addClass('visible');
-    }, function () {
-        $(this).removeClass('animate');
-        $('div.carouselNext, div.carouselPrev').removeClass('visible');
-    });
-</script> -->
 {% endblock %}

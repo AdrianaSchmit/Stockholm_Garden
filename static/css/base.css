@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Yeseva+One&display=swap');
 
+
+/* pallete
+#3B2E66 purple
+#CE392B red
+#DEBD47 ye
+#3EC24D gron
+#03070D black
+ */
+
 html {
     height: 100%;
 }
-/* 
-body {
-
-    padding-top: 230px;
-} */
 
 /*------------------------------------------------------------------------------------------------ base.html nav*/
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.navbar {
+    padding: 0;
+
+}
 
 .navbar-expand-lg {
     padding-right: 8rem;
@@ -24,9 +41,14 @@ body {
 
 #delivery-banner {
     margin-bottom: 0;
-    background-color: black;
+    padding: 0;
+    background-color: #03070D;
     color: aliceblue;
     font-family: "EB+Garamond", sans-serif;
+}
+
+.carousel-item nav-link {
+    padding: 0;
 }
 
 #secondnav {
@@ -38,35 +60,28 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------------ home.html */
-
-/* section1
- */
 #homeimage {
     background: url('/media/cover3.jpg') no-repeat center center fixed;
     object-fit: cover;
-   background-size: 100%;
-    height: 1000px;  
+    background-size: cover;
+    height: 60vh;
     position: relative;
-    margin-top: 0;  
-
+    margin-top: 0;
 }
 
-
-
 #imagebanner {
-
-    margin-left: 100px;
-    margin-top: 200px;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .card-title {
     background-color: #FFFFFFD9;
     font-family: 'Yeseva One', sans-serif;
-    max-width: 400px;
-    font-size: 3rem;
-    height: 80px;
+    max-width: 300px;
+    font-size: 3vw;
+    min-height: 5vh;
     text-align: center;
-    padding-top: 12px;
+    margin-left: 8%;
 }
 
 #card-title-3 {
@@ -77,13 +92,13 @@ body {
 #imagebanner2 {
     background-color: #DEBE48D9;
     color: #FFFFFF;
-    max-width: 550px;
-    min-height: 755px;
-    margin-left: 1300px;
+    width: 35vw;
+    height: 65vh;
     margin-top: 0px;
     font-family: "EB+Garamond", sans-serif;
     text-align: center;
-    padding-top: 180PX;
+    padding-top: 3vh;
+    margin-left: 5vw;
 }
 
 #imagebanner2 h1 {
@@ -96,7 +111,7 @@ body {
 }
 
 #shop-now-button {
-    background-color: #443b2c;
+    background-color: #CE392B;
     font-family: "EB+Garamond", sans-serif;
 }
 
@@ -107,12 +122,59 @@ body {
 }
 
 #best_sell h1 {
-
     font-family: 'Yeseva One', sans-serif;
     text-align: center;
     padding-bottom: 70px;
 }
 
+.scrolling-wrapper {
+    overflow-x: auto;
+    /* 	width: 80%; */
+    margin: auto;
+}
+
+.card-block {
+    height: 40vh;
+    width: 30vh;
+    border: none;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.card-block:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+.card-1 {
+    background: url('/media/plant36.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-2 {
+    background: url('/media/plant10.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-3 {
+    background: url('/media/plant12.webp') no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.card-4 {
+    background: url('/media/plant35.jpg') no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.card-5 {
+    background: url('/media/plant33.jpg') no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
 
 
 /*------------------------------------------------------------------------------------------------  */
@@ -164,15 +226,15 @@ body {
 
 /*------------------------------------------------------------------------------------------------ favorites.html*/
 
-#favorite_title{
+#favorite_title {
     font-family: 'Yeseva One', sans-serif;
     text-align: center;
 
 }
 
-#favorite_content  {
+#favorite_content {
     font-family: "EB+Garamond", sans-serif;
- 
+
 
 }
 
@@ -187,8 +249,10 @@ input[name='q']::placeholder {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -206,8 +270,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -224,18 +288,19 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 
@@ -315,58 +380,64 @@ input[name='q']::placeholder {
 
 
 
+
 /* --------------------------------------------------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        /*  z-index: 1030; */
+    }
+
+    .header-container {
+        padding-top: 138px;
+    }
+}
 
 
-  /* mobile landscape */
+/* /*   /* mobile landscape */
 @media screen and (max-width: 988px) {
-   
-    .extra-link {
-      display: none;
+    .header-container {
+        padding-top: 120px;
     }
 
-    #delivery-banner{
+    #search {
+        width: 40vw;
+    }
+
+
+    .navbar-expand-lg {
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 988px) {
+    #imagebanner2 {
+
         display: none;
-      }
-    
-      #imagebanner {
-
-       padding-top: 100px;
-       place-items: center;
     }
 
-    #imagebanner h1 {
-        font-size: 1.3rem;
+    #banner {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin-right: -50%;
+        top: 50%;
+        left: 50%;
     }
-
-#imagebanner2{
-
-  display: none;
- }
-
-
-    
-
-  }
+}
