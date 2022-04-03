@@ -219,7 +219,13 @@ html {
 
 
 .card img {
-    height: 550px;
+    height: 50vh;
+}
+
+.card img:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+    opacity: 0.9;
 }
 
 
@@ -377,7 +383,13 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* --------------------------------------------------------------------------- Orders */
 
+
+.order-history {
+    max-height: 416px; 
+    overflow-y: auto;
+}
 
 
 
