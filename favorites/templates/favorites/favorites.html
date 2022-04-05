@@ -2,9 +2,17 @@
 {% load static %}
 {% load cart_tools %}
 
+
 {% block page_header %}
-<div class="overlay"></div>
-<div class="container mb-2">
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="width: 70vw; margin-top: 30px;">
     <div class="row">
         <div class="col">
            
@@ -51,7 +59,7 @@
                                 </td>
 
                                 <td class="py-3">
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><i class="fa fa-trash" aria-hidden="true"  style="color: black;"></i></a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa fa-trash" aria-hidden="true"  style="color: black;"></i></a>
                                 </td>
                             </tr>
 
@@ -61,11 +69,11 @@
 
                      
                         <tr>
-                            <td colspan="5" class="text-right">
+                            <td colspan="5" class="text-center">
                                 <a href="{% url 'checkout' %}" class="btn btn-black btn-warning rounded-0 btn-lg">
-                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span class="text-uppercase">Continue shopping</span>
                                     <span class="icon">
-                                        <i class="fas fa-lock"></i>
+                                        <i class="fa fa-shopping-bag"></i>
                                     </span>
                                 </a>
                             </td>
@@ -87,4 +95,24 @@
 </div>
 
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/favorites/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken,};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}

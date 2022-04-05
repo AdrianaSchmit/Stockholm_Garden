@@ -24,10 +24,13 @@ def add_to_favorites(request, item_id):
     return redirect(redirect_url)
 
 def remove_from_favorites(request, item_id):
+    product = get_object_or_404(Product, pk=item_id)
+    redirect_url = request.POST.get('redirect_url')
+    favorites = request.session.get('favorites', {})
 
-    favorites.pop(item_id)
-    messages.success(request, f'Removed {product.name} from your favorites')
+    if favorites.pop(item_id, None) is not None:
+        messages.success(request, f'Removed {product.name} from your favorites')
 
     request.session['favorites'] = favorites
-    return redirect(redirect_url) 
+    return redirect(view_favorites) 
        
