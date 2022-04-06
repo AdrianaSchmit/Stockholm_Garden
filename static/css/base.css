@@ -176,6 +176,11 @@ html {
     background-size: cover;
 }
 
+/*------------------------------------------------------------------------------------------------  */
+
+
+
+
 
 /*------------------------------------------------------------------------------------------------  */
 .overlay {
@@ -219,7 +224,7 @@ html {
 
 
 .card img {
-    height: 50vh;
+    height: 40vh;
 }
 
 .card img:hover {
@@ -421,7 +426,7 @@ input[name='q']::placeholder {
 /* /*   /* mobile landscape */
 @media screen and (max-width: 988px) {
     .header-container {
-        padding-top: 120px;
+        padding-top: 130px;
     }
 
     #search {
@@ -433,7 +438,6 @@ input[name='q']::placeholder {
         text-align: center;
         padding: 0;
     }
-
 
 
 

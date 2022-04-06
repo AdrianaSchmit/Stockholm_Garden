@@ -12,83 +12,85 @@
 {% endblock %}
 
 {% block content %}
-<div class="container" style="width: 70vw; margin-top: 30px;">
+<div class="container" id="fav_container" style="width: 70vw; margin-top: 30px;">
     <div class="row">
         <div class="col">
-           
+
             <h1 class="logo-font mb-4" id="favorite_title">Your favorites</h1>
-    
+
         </div>
     </div>
 
     <div class="row" id="favorite_content">
         <div class="col">
             {% if favorites_items %}
-                <div class="table-responsive rounded">
-                    <table class="table table-sm table-borderless">
-                        <thead class="text-black">
-                            <tr>
-                                <th scope="col"></th>
-                            
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-
-                        {% for item in favorites_items %}
-
-                            <tr  style="border-bottom:1px solid">
-   
-                                <td class="p-3 w-25">
-                                    <a href="{% url 'product_detail' item.product.id %}">
-                               <img class="img-fluid rounded" src="{{ item.product.image.url }}" style="width: 150px; height: 182px;"> 
-                            </a>
-                                </td>
-                               
-                 
-                      
-                                <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name}}</strong></p>
-                                    <p class="my-0 small text-muted">{{ item.product.description }}</p>
-                                  
-                              
-
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
-                                </td>
-
-                                <td class="py-3">
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa fa-trash" aria-hidden="true"  style="color: black;"></i></a>
-                                </td>
-                            </tr>
-
-                    
-                       
-                        {% endfor %}
-
-                     
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
                         <tr>
-                            <td colspan="5" class="text-center">
-                                <a href="{% url 'checkout' %}" class="btn btn-black btn-warning rounded-0 btn-lg">
-                                    <span class="text-uppercase">Continue shopping</span>
-                                    <span class="icon">
-                                        <i class="fa fa-shopping-bag"></i>
-                                    </span>
-                                </a>
-                            </td>
+                            <th scope="col"></th>
+
+                            <th scope="col"></th>
+                            <th scope="col"></th>
                         </tr>
-                  
-                    </table>
-                </div>
+                    </thead>
+
+                    {% for item in favorites_items %}
+
+                    <tr style="border-bottom:1px solid">
+
+                        <td class="p-3 w-25">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                    style="width: 25vw; height: 20vh;">
+                            </a>
+                        </td>
+
+
+
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name}}</strong></p>
+                            <p class="my-0 small text-muted">{{ item.product.description }}</p>
+
+
+
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+
+                        <td class="py-3">
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i
+                                    class="fa fa-trash" aria-hidden="true" style="color: black;"></i></a>
+                        </td>
+                    </tr>
+
+
+
+                    {% endfor %}
+
+
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <a href="{% url 'checkout' %}" class="btn btn-black btn-warning rounded-0 btn-lg">
+                                <span class="text-uppercase">Continue shopping</span>
+                                <span class="icon">
+                                    <i class="fa fa-shopping-bag"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
             {% else %}
-                <p class="lead mb-5">Your have no favorite.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
+            <p class="lead mb-5">Your have no favorite.</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
             {% endif %}
         </div>
     </div>
@@ -101,18 +103,19 @@
 {{ block.super }}
 
 <script type="text/javascript">
-
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/favorites/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken,};
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+        };
 
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function () {
+                location.reload();
+            });
     })
 </script>
 {% endblock %}

@@ -19,7 +19,7 @@ def add_to_favorites(request, item_id):
     favorites[item_id] = {item_id:item_id,
     "name":product.name,
     "price":str(product.price)}
-    messages.success(request, f'Added {product.name}  color {product.name.upper()} to your notification')
+    """   messages.success(request, f'Added {product.name}  color {product.name.upper()} to your notification') """
     request.session['favorites'] = favorites
     return redirect(redirect_url)
 
