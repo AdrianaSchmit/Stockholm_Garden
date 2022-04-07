@@ -132,20 +132,10 @@
 
         {% if user.is_authenticated %}
         <div>
-        <a class="btn btn-black bg-warning text-dark w-50 text-uppercase mt-5" href="{% url 'add_to_reviews' product.id %}"> POST REVIEW</a>
-        </div>
+        <a class="btn btn-black bg-warning text-dark w-50 text-uppercase mt-5" href="{% url 'add_to_reviews' product.id %}" id="#librarymodal"> POST REVIEW</a>
+        </div> 
+
         {% endif %}
-        
-            
-
-        </form>
-
-
-
-
-
-
-
             </div>
         </div>
     </div>
@@ -166,9 +156,10 @@
 
         {% for review in reviews %}
         
-        <p> {{ review.product }} - <strong> {{ review.rating}} stars </strong></p>
+        <p> {{ review.product }} - <strong> {{ review.rating}} / 5 </strong></p>
         
         
+        <p> {{ review.text }}</p>
         <p> {{ review.text }}</p>
         <p> {{ review.user_name }}</p>
         
