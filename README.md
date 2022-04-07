@@ -65,36 +65,50 @@ A fictitious online store setup for study porposes. The company wants to reach a
 
 ### Existing Features
 
-- Navigation Bar fixed.
-- Home page with hero image and links to shop.
-- Search functionallity.
+- Navigation Bar
+    - Fixed nav bar containing,
+        - Logo.
+        - My account with acess to register and login, or acess to My account and log out if I am logged in.
+        - Favorites.
+        - Shopping cart.
+        - Shop and categories of products.
+        - Search functionallity
+- Homepage page with hero image and links to shop. Also a section showing the best sellers in a scrollbar, in construction still.  
+
+- Products.
+    - Page showing all the products.
+    
+- Product category.
+    - A page to each category that show only the respectives products.
+- Product page.
+    - The specific product containing information, add review button, add to favorites button and to cart buttons. Also a section under the product showing the reviews. Also options to choose color to some products and add quantity.    
 - Register and login page forms.
-- Shopping cart page.
-- Checkout page.
-- Favorites page.
-- Add review page.
+- Profile page.
+    Showing the user delivery information and order history.
+- Shopping cart page with all the products to be purchased. 
+- Checkout page where the payment and finalized shopping will happen.
+- Favorites page with a button to delete the product.
+
 
 ### Features Left to Implement
 
-- Fix the responsiveness.
-- Add a best selling section under the hero image.
--  Add a subscribe now section and Implement it. 
+
+- The best selling section will contain infos of the product like in the products page and by click the user will be redirect to the specific product page.
+-  Add a subscribe now section and inplementation with strip. 
 - Add a footer.
 - Add a contact form. 
-- Add zoom in or shadow to the product images. 
-- Add the delivery banner under the nav and pass it as carrousel on mobiles.
-- Create a new login and registration forms.
+- Create a new type login and registration forms.
+- implement registration and log in with social accounts.
 - Have my favorites linked to the user account.
-- Allow user to choose color for the favorite item.
+- Allow user to choose color when sending to the favorites page.
 - Allow user to send from the favorite directly to the shopping cart.
-- Fix functionality to remove products from favorites.
 - Have a number of the products added to favorites showing in the favorite icon on the navbar.
-- Have a model for leaving review instead of a form.
+- Have a modal for leaving review instead of a form.
 - Redirect the client from the review to the product or products page.
 - Push the user name to show in the review.
 - Implement a star rating system.
-- Have a page to all reviews.
-- Have a filter products by price and type of plant care.
+- Have a filter products by price and type of plant.
+- Fix the bugs found.
 
 
 
@@ -134,9 +148,101 @@ ___
 
 ## Testing
 
-----
+Manual tests were performed.
 
-To be implemented.
+
+- Nav bar items on click redirect to the desired page. 
+- Button shop in the home page redirect correctly to the products page.
+
+- Products
+    - when clicking in all plants in the navbar it correctly load all the products to the page with the name, price and icon to send the product to the favorites page.
+    - The heart icon on click is correctly sending the product to the favorites page.
+    - when choosing a specific category in the shop link on the bar, the specific products are displayed.
+    - When clicking on a product, the product detail page is displayed with the product information, and add review, add to cart and add to favorites buttons. The reviews sections is shown undert the product. The product category name is also displayed in this page.
+    The product gives the option of choosing the color and the amount correctly.
+    - Add to cart button works correctly.
+    - Add to favorites button working correctly.
+    - Add review button working correctly.
+
+- Search input is correctly returning the product with the specific input.
+
+- Favorites.
+    - selected producted is rendering correclty and by clicking on icon trash can the product is removed from the list.
+
+- Shopping cart
+    - Updated and remove buttons working properly.
+    - Price and delivery costs calculated correctly. 
+    - Buttons to continue shopping or checkout working properly.
+
+- Check out.
+    - Delivery information is being saved from the check out.
+    - The shopping with credit card is sucessfully.
+
+- My profile.
+    - Save correctly the delivery infomation.
+    - It is showing the order purchase history.
+
+- Reviews
+    - Once review is submitted, the same shows under the specific product page detail image. 
+
+
+
+### Validator Testing
+
+HTML and CSS tested with W3C Markup Validator and W3C CSS Validator.
+
+
+### User stories testings.
+
+- I want an easy navigation website.
+    - Easy acces to every information needed in the nav bar and buttons around the page.
+- I want a easy way to acess to all products and a variety of products to browse.
+    - The nav bar has a clear link to shop all the product plus other buttons around the page. There is a good number of different products on the webpage.
+
+
+- I want to have the option of browsing in categories.
+    - Under the link shop, you have a list of categories available on click.
+- I want to search for something specific with a keyword. 
+    - By typing anything on the search input, it returns a product that contain that keyword , if there is one.
+- I want to have my own account.
+    - Registration form is provided.
+- I want to be able to have a favorites list in my account.
+    - To be implemented.
+- I want to be able to checkout the products easily.
+    - The check out process is very straighfoward, requiring only the dlivery information and credit card details. The user can also save the delivery information in the profile so it will be automatcly filled when checking out the product.
+- I want to see my order history.
+    - The ordeer history is shown in the profile.
+- I want feel safe when I purchase with credit card.
+    - Safe payment provided by stripe.
+- I want to be able to leave a review of the product.
+    - By clicking on the product detail, a button leave review is available and the user review will be displayed in the specific product page.
+- I want to see contact informations in case I need support from the store.
+    - To be implemented.
+- I want to be able to access the site from any kind of device.
+    - Stockholm Garden is responsive.
+
+
+    
+
+### Unfixed Bugs
+
+- At the moment, the user doesnt need to be logged in to save products to the favorites. Not fixed for being short on time.
+
+- I was not able to change the color of heart icon on click to show wich products are favorites.
+- the product page detail needs a new UX layout.   Not fixed for being short on time.
+- In the shopping cart, the button -/+ are not working.  Not fixed for being short on time.
+- Reviews
+
+    - The review was supposed to be filled inside a modal in the product detail page, and not in a separate page. I was not able to fix it .
+    - The product name must be already selected in the list and not for the user select it manually.
+    - It is missing a proper value rating system, like number or stars icons. The rating are input is not accpeting any value, but it was supposed to accepting only from 1 to 5.
+    - Username missing. 
+    - All about from the reviews were not fixed for being short in time.
+    - When subimitting the review, it should send the user back to the product detail page,
+    
+
+
+
 
 ## Deployment
 
@@ -196,7 +302,7 @@ ___
 
 ### Acknowledgements
 
-Thanks to all the tutors , to my mentor and to the Student Care.
+Thanks to all the tutors  and to the Student Care.
 
 
 
