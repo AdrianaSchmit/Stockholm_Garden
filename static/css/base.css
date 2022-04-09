@@ -446,10 +446,9 @@ input[name='q']::placeholder {
         padding: 0;
     }
 
-/*     #cart_img {
-   width: 10vw;
-   height: 30vh;
-    } */
+    #review_container {
+      margin-left: 50vw;
+    }
 
 
 }
