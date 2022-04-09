@@ -6,7 +6,7 @@ ___
 
 [View live project here](https://gardenstockholm.herokuapp.com/)
 
-A fictitious online store setup for study porposes. The company wants to reach as manymarket possible by selling their products online.
+A fictitious online store setup for study porposes. The company wants to reach as many market possible by selling their products online.
 
 
 
@@ -46,14 +46,18 @@ A fictitious online store setup for study porposes. The company wants to reach a
     - The main fonts chosed for this project were "  EB+Garamond"and "Yeseva+One"
 
 
- 
 
 
 ## Wireframes
 
 ----
 
-
+![Wireframe]( media/home.png) 
+![Wireframe]( media/Homemobile.png)
+![Wireframe]( media/products.png)
+![Wireframe]( media/product.png)
+![Wireframe]( media/Favorites.png)
+![Wireframe]( media/Reviews.png)
 
 
 
@@ -88,6 +92,7 @@ A fictitious online store setup for study porposes. The company wants to reach a
 - Shopping cart page with all the products to be purchased. 
 - Checkout page where the payment and finalized shopping will happen.
 - Favorites page with a button to delete the product.
+- Add reviews page.
 
 
 ### Features Left to Implement
@@ -103,10 +108,8 @@ A fictitious online store setup for study porposes. The company wants to reach a
 - Allow user to choose color when sending to the favorites page.
 - Allow user to send from the favorite directly to the shopping cart.
 - Have a number of the products added to favorites showing in the favorite icon on the navbar.
-- Have a modal for leaving review instead of a form.
-- Redirect the client from the review to the product or products page.
-- Push the user name to show in the review.
-- Implement a star rating system.
+- Have a modal for leaving review instead of a in another page.
+- Implement a star rating review system.
 - Have a filter products by price and type of plant.
 - Fix the bugs found.
 
@@ -183,7 +186,9 @@ Manual tests were performed.
     - It is showing the order purchase history.
 
 - Reviews
-    - Once review is submitted, the same shows under the specific product page detail image. 
+    - The product to be reviewd is already seleted on the form without user needs to look for it.
+    - Once review is submitted, the same shows under the specific product page detail image.
+    - The review shows the username.
 
 
 
@@ -231,14 +236,7 @@ HTML and CSS tested with W3C Markup Validator and W3C CSS Validator.
 - I was not able to change the color of heart icon on click to show wich products are favorites.
 - the product page detail needs a new UX layout.   Not fixed for being short on time.
 - In the shopping cart, the button -/+ are not working.  Not fixed for being short on time.
-- Reviews
-
-    - The review was supposed to be filled inside a modal in the product detail page, and not in a separate page. I was not able to fix it .
-    - The product name must be already selected in the list and not for the user select it manually.
-    - It is missing a proper value rating system, like number or stars icons. The rating are input is not accpeting any value, but it was supposed to accepting only from 1 to 5.
-    - Username missing. 
-    - All about from the reviews were not fixed for being short in time.
-    - When subimitting the review, it should send the user back to the product detail page,
+- Some sucess messages are missing for the add review and favorites page.
     
 
 
@@ -248,7 +246,7 @@ HTML and CSS tested with W3C Markup Validator and W3C CSS Validator.
 
 ----
 
-The project was deployed to GitHub Pages using the following steps...
+The project was deployed to Heroku using the following steps...
 
 1 -Tell Heroku which applications are required to run by adding pip3 freeze --local > requirements.txt to CLI
 
@@ -302,7 +300,7 @@ ___
 
 ### Acknowledgements
 
-Thanks to all the tutors  and to the Student Care.
+Thanks to all the tutors  and to the Student Care. Thanks to Martin Lipinski for the support.
 
 
 
