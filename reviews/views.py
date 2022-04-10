@@ -34,6 +34,7 @@ def add_to_reviews(request,product_id):
             review.rating = rating
             review.author = request.user
             review.save()
+            messages.success(request, f'Thank you for your review of {product.name}')
 
         return redirect(reverse('products'))
     return render(request,'reviews/review.html',context)

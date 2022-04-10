@@ -16,6 +16,7 @@ def add_to_favorites(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     redirect_url = request.POST.get('redirect_url')
     favorites = request.session.get('favorites', {})
+    messages.success(request, f' {product.name} was sucesfully added to your favorites')
     favorites[item_id] = {item_id:item_id,
     "name":product.name,
     "price":str(product.price)}
