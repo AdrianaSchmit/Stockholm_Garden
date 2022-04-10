@@ -4,7 +4,7 @@
       "model": "products.product",
       "fields": {
          "sku": "pp101",
-         "name": "BURST OF SPRING BULB GARDEN",
+         "name": "Burst of spring bulb garden",
          "description": "Narcissus pseudonarcissus 'Cragford' & Tulipa 'Princess Irene'",
          "price": 53.99,
          "category": 1,

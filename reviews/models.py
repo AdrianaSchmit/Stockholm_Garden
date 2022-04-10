@@ -7,11 +7,11 @@ from products.models import Product
 
 # Product Review
 RATING=(
-    (1,'1 star'),
-    (2,'2 stars'),
-    (3,'3 stars'),
-    (4,'4 stars'),
-    (5,'5 stars'),
+    (1 ,' ⭐ '),
+    (2,' ⭐  ⭐ '),
+    (3,' ⭐  ⭐  ⭐ '),
+    (4,' ⭐  ⭐  ⭐  ⭐ '),
+    (5,' ⭐  ⭐  ⭐  ⭐  ⭐ '),
 )
 
 class Reviews(models.Model):
