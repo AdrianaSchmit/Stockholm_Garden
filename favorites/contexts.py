@@ -22,21 +22,3 @@ def favorites_contents(request):
     }
 
     return context
-
-
-
-"""     favorites_items = []
-    total = 0
-    product_count = 0
-    favorites = request.session.get('favorites', {})
-    print(favorites)
-    for item_id, item_data in favorites.items():
-        favorites_items.append({'item_id':item_id,
-        'name':item_data["name"],
-        "price":item_data["price"]}),
-        'product': product,
-
-        print(favorites_items)
-    context = {
-        'favorites_items': favorites_items,
-    }  """
