@@ -8,7 +8,7 @@ ___
 
 A fictitious online store setup for study porposes. The company wants to reach as many market possible by selling their products online.
 
-
+![Mockup]( media/website.png) 
 
 
 ## User Experience (UX)
@@ -235,6 +235,7 @@ HTML and CSS tested with W3C Markup Validator and W3C CSS Validator.
 
 - I was not able to change the color of heart icon on click to show wich products are favorites.
 - the product page detail needs a new UX layout.   Not fixed for being short on time.
+- The buttons on the product detail page doesnt follow a nice UX. The changes I applied were not working . Not fixed for being short on time.
 - Some sucess messages are missing for the add review and favorites page.
 - Two svg images were not able to be pushed from aws. Will be fixing that soon.
 - When fixing the -/+ in the cart page, another bug was created, which is all products have now the options of color, and before the flowers category didnt have this option. It is not fixed for being short on time.

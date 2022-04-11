@@ -130,10 +130,10 @@
                 <div class="form-row">
 
 
-                    <div class="row">
+                    <div class="row" >
                         <div class="col-12">
 
-                            <input type="submit" class="btn btn-black bg-warning text-dark  text-uppercase mt-2"
+                            <input type="submit" class="btn btn-black bg-warning text-dark text-uppercase mt-2" style="margin-left: 3vw;"
                                 value=" ❤️  Add to favorites">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -141,12 +141,14 @@
 
                     {% if user.is_authenticated %}
 
+                  
+
                     <div class="col-12">
-                        <a class="btn btn-black bg-warning text-dark text-uppercase mt-2"
+                        <a class="btn btn-black bg-warning text-dark text-uppercase mt-2 " style="width: 26%; margin-left: 3vw;" id="review_button"
                             href="{% url 'add_to_reviews' product.id %}"> <i class="fas fa-comments"></i> POST
                             REVIEW</a>
                     </div>
-
+                </div>
                     {% endif %}
                 </div>
             </form>

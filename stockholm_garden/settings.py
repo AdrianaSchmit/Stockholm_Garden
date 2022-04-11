@@ -124,6 +124,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'stockholm_garden.wsgi.application'
 
+#os.environ['DATABASE_URL'] ='postgres://keskflxqxnvqaf:739444c82bf066ca87a92d7ff59f637ea5d3c7b4ffff424f2f2dc2a67cd0c3ae@ec2-54-155-5-151.eu-west-1.compute.amazonaws.com:5432/d2rhudnmfrche7'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {

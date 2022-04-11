@@ -450,6 +450,10 @@ input[name='q']::placeholder {
       margin-left: 50vw;
     }
 
+    #review_button {
+        width: 40%;
+      }
+
 
 }
 
@@ -466,4 +470,8 @@ input[name='q']::placeholder {
         top: 50%;
         left: 50%;
     }
+
+    #review_button {
+        width: 70%;
+      }
 }
